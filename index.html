@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Timer App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/5562/5562240.png" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <h1 class="heading">Multi-Timer App</h1>
+
+        <div class="timer">
+            <p class="line">Set Time: </p>
+            <div>
+                <input type="number" min="0" max="23" placeholder="hh" id="hoursInput">
+                <label>:</label>
+                <input type="number" min="0" max="59" placeholder="mm" id="minutesInput">
+                <label>:</label>
+                <input type="number" min="0" max="59" placeholder="ss" id="secondsInput">
+            </div>
+            <div>
+              <button id="set" class="deleteBtn">Set</button>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="currentTimer">
+                 <p>Current Timers</p>
+            </div>
+            <div class="noTimer">
+             <!-- Print that there's no timers remaining -->
+            </div>
+            <div class="timersContainer">
+              <!-- Display the timers -->
+            </div>
+      </div>
+      <audio id="audio">
+        <source src="audio/timer-end.wav" />
+      </audio>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
